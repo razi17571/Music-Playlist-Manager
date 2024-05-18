@@ -157,3 +157,6 @@ To get started with the Music Playlist Manager application, follow these steps:
 
 - **Endpoint**: `DELETE /api/users/profile`
 
+## Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests.
