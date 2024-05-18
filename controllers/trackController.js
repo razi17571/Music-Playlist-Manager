@@ -2,7 +2,8 @@ const Playlist = require('../models/Playlist');
 const Track = require('../models/Track');
 
 exports.addTrack = async (req, res) => {
-    const { playlistId, track } = req.body;
+    const { playlistId } = req.params; // Correctly destructure playlistId from params
+    const track = req.body;
     try {
         const playlist = await Playlist.findById(playlistId);
         if (!playlist) {
@@ -10,6 +11,7 @@ exports.addTrack = async (req, res) => {
         }
         const newTrack = new Track(track);
         playlist.tracks.push(newTrack);
+        await newTrack.save(); // Ensure the new track is saved to the database
         await playlist.save();
         res.status(201).json(newTrack);
     } catch (err) {
