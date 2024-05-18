@@ -1,0 +1,23 @@
+{
+    "name": "music-playlist-manager",
+    "version": "1.0.0",
+    "description": "A music playlist manager application",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "keywords": [
+      "music",
+      "playlist",
+      "manager"
+    ],
+    "author": "Mohammed Raziullah Ansari",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^6.1.3"
+    }
+  }
+  
