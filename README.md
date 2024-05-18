@@ -28,7 +28,7 @@ To get started with the Music Playlist Manager application, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/music-playlist-manager.git
+   git clone https://github.com/razi17571/Music-Playlist-Manager.git
    ```
 
 2. Install dependencies:
